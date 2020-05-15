@@ -40,6 +40,12 @@ p {
   border-radius: 30px;
 }
 
+img {
+  width: 40%;
+  height: 30vh;
+  margin: 2% auto;
+}
+
 label {
   width: 40%;
   margin: 3% auto;
