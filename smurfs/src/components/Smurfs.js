@@ -7,14 +7,14 @@ const Smurfs = () => {
   console.log({ smurf });
 
   return (
-    <div>
+    <div className="smurfsCard">
       {smurf.map((smurfs) => (
-        <>
+        <div className="smurf">
           <h2>{smurfs.name}</h2>
           <p>{smurfs.age}</p>
           <p>{smurfs.height}</p>
-          <img src="#" alt="Random Smurf" />
-        </>
+          {/* <img src="#" alt="Random Smurf" /> */}
+        </div>
       ))}
     </div>
   );
