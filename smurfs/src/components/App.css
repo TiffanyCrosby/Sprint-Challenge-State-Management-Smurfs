@@ -30,3 +30,35 @@ h2 {
   color: darkmagenta;
   font-size: 2rem;
 }
+
+p {
+  color: white;
+  background-color: lightseagreen;
+  font-size: 1.5rem;
+  width: 75%;
+  margin: 2% auto;
+  border-radius: 30px;
+}
+
+label {
+  width: 40%;
+  margin: 3% auto;
+  padding: 1%;
+}
+
+input {
+  text-align: center;
+  background-color: lightpink;
+  padding: 1%;
+  font-size: 1.5rem;
+  border-radius: 30px;
+}
+
+button {
+  color: white;
+  background-color: darkmagenta;
+  font-size: 2rem;
+  width: 40%;
+  margin: 2% auto;
+  border-radius: 30px;
+}
