@@ -1,3 +1,70 @@
 .App {
   text-align: center;
+  background-color: aqua;
+  border: 4px dotted;
+  width: 85%;
+  margin: 3% auto;
+  padding: 2%;
+}
+
+h1 {
+  color: darkblue;
+}
+
+.smurfsCard {
+  background-color: lightpink;
+  border: 5px double;
+  width: 75%;
+  margin: 3% auto;
+  padding: 2%;
+}
+
+.smurf {
+  width: 90%;
+  border: 3px dotted lightcoral;
+  margin: 2% auto;
+  padding: 1%;
+}
+
+h2 {
+  color: darkmagenta;
+  font-size: 2rem;
+}
+
+p {
+  color: white;
+  background-color: lightseagreen;
+  font-size: 1.5rem;
+  width: 75%;
+  margin: 2% auto;
+  border-radius: 30px;
+}
+
+img {
+  width: 40%;
+  height: 30vh;
+  margin: 2% auto;
+}
+
+label {
+  width: 40%;
+  margin: 3% auto;
+  padding: 1%;
+}
+
+input {
+  text-align: center;
+  background-color: lightpink;
+  padding: 1%;
+  font-size: 1.5rem;
+  border-radius: 30px;
+}
+
+button {
+  color: white;
+  background-color: darkmagenta;
+  font-size: 2rem;
+  width: 40%;
+  margin: 2% auto;
+  border-radius: 30px;
 }

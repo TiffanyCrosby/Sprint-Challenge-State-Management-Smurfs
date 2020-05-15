@@ -23,10 +23,30 @@ In this challenge, you are to build a Smurfs village utilizing context or Redux 
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 - [ ] What problem does the context API help solve?
-- [ ] In your own words, describe `actions`, `reducers` and the `store` and their role in Redux. What does each piece do? Why is the store known as a 'single source of truth' in a redux application?
+
+      it makes it so you no longer have to "prop drill". You don't have to pass props down from component to component which gets confusing and combersome!
+
+* [ ] In your own words, describe `actions`, `reducers` and the `store` and their role in Redux. What does each piece do? Why is the store known as a 'single source of truth' in a redux application?
+
+      actions- a function that is passed to the reducer to tell the reducer what you want to happen to the data you are passing/connecting it to.
+
+        reducers- a function that takes in multiple functions/actions and returns a single result/data/function
+
+        the store- is basically an object that stores all state that the application is using. it's one central location to grab state from so that you don't have to pass it down in 'props' from one component to another.
+
 - [ ] What is the difference between Application state and Component state? When would be a good time to use one over the other?
+
+        Application state is the data that is in the store...it's state that more than one component will be using. Best time to use it is when there is more than one componet that wants to use it so the data doesn't need to be passed down by props.
+
+        Component state is when just the component is using the data that the state is keeping track of. Best time to use it would
+
 - [ ] Describe `redux-thunk`, what does it allow us to do? How does it change our `action-creators`?
-- [ ] What is your favorite state management system you've learned and this sprint? Please explain why!
+
+      It is middleware, which means it's a function, that allows us to do multiple things. In this case it allows us to make asyncronous calls to get data since everything in react/redux is normally sycronous. It gives the action the ability to say when to dispatch a an action...
+
+* [ ] What is your favorite state management system you've learned and this sprint? Please explain why!
+
+      context API because it is MUCH MUCH less code and less confusing.
 
 ## Project Set Up
 
@@ -61,11 +81,11 @@ Follow these steps to set up your project:
 ```js
 [
   {
-    name: "Brainey",
+    name: 'Brainey',
     age: 200,
-    height: "5cm",
-    id: 0
-  }
+    height: '5cm',
+    id: 0,
+  },
 ];
 ```
 
@@ -94,17 +114,17 @@ Example of object created in Smurf DB:
 ```js
 [
   {
-    name: "Brainey",
+    name: 'Brainey',
     age: 200,
-    height: "5cm",
-    id: 0
+    height: '5cm',
+    id: 0,
   },
   {
-    name: "Sleepy",
+    name: 'Sleepy',
     age: 200,
-    height: "5cm",
-    id: 1
-  }
+    height: '5cm',
+    id: 1,
+  },
 ];
 ```
 
@@ -154,10 +174,10 @@ Example:
 ```js
 output: [
   {
-    name: "Sleepy",
+    name: 'Sleepy',
     age: 200,
-    height: "5cm",
-    id: 1
-  }
+    height: '5cm',
+    id: 1,
+  },
 ];
 ```
