@@ -17,7 +17,7 @@ const App = () => {
         setSmurfs(response.data);
       })
       .catch((error) => console.log('Error from axios call: ', error));
-  }, []);
+  }, [smurfs]);
 
   return (
     <div className="App">
